@@ -9,6 +9,7 @@ describe('services module', ()=>{
 
         describe('healthy services', ()=>{
 
+            //healthy mock response for each endpoint
             let mock_responses = {
                 "https://bim360dm-dev.autodesk.com/health?self=true": {
                     status: {
@@ -32,6 +33,7 @@ describe('services module', ()=>{
             };
 
             beforeEach(function() {
+                //save original module and replace its get method with one that returns the mock
                 requestOriginal = require.cache[ require.resolve('request-promise') ].exports;
                 require.cache[ require.resolve('request-promise') ].exports.get = function(url) {
                     return new Promise((resolve, reject)=>{
