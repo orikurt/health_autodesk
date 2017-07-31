@@ -1,4 +1,5 @@
-let MAX_SIZE = 60;
+let config = require('./config.json');
+let MAX_SIZE = config.db.max_size;
 
 let self = {
     data: {}

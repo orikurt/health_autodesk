@@ -86,5 +86,5 @@ app.listen(config.port, function(){
                 cb(err);
             });            
         }, (err)=>{});    
-    }, 600);
+    }, config.sample_interval);
 });

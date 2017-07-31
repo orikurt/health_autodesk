@@ -1,3 +1,7 @@
 {
-    "port": 4200
+    "port": 4200,
+    "sample_interval": 60000,
+    "db": {
+        "max_size": 60
+    }
 }
