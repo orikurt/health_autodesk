@@ -58,3 +58,6 @@ example:
     4. client interface
     
     5. more unit test - made some as a POC but obviously not much coverage
+    
+    6. there are literaly no comments in the code besides a couple in the test file, which are also unnecessary. Clean, readable code and good naming beats comments any day, and nobody reads them anyway. If the code is not readable etc' well that is another story...
+    
