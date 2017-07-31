@@ -3,9 +3,13 @@
 Service health test service
 
 configurations in ./config.json:
+
 port 4200
+
 sampling interval 60000ms
+
 maximum samples to keep 60
+
 
 endpoints available:
   /health/:service_name        - is service up true/false
